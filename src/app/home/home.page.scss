@@ -1,0 +1,189 @@
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  --background: url('../../assets/image/3.jpg') no-repeat center center / contain;
+  background: var(--background); /* Apply the variable */
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+  background-size: cover; /* Ensure the background covers the container */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image rounded */
+  object-fit: cover; /* Ensures the image fits well inside the circle */
+  border: 4px solid white; /* Optional: adds a border around the image */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #ffab40;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Cards Styling */
+ion-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ion-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+ion-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+ion-card-content {
+  font-size: 0.9rem;
+}
+
+/* Sections Styling */
+.skills, .tabs-info {
+  margin: 20px 0;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Profile Image */
+@media (max-width: 600px) {
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+h1 {
+  color: white;
+}
+
+h1 span {
+  color: lightblue;
+}
+/* Button Styling */
+ion-button {
+  --background: #ffab40; /* Warm yellow color for the background */
+  --border-radius: 20px; /* Slightly rounded corners for a modern look */
+  --color: white; /* White text color */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow to make the button stand out */
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+ion-button:hover {
+  --background: #ff8c00; /* Darker yellow-orange on hover */
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+ion-button:focus {
+  --background: #ffab40; /* Keep the original color when focused */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Normal shadow on focus */
+}
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-card ion-card-header,
+.custom-card ion-card-footer {
+  flex-shrink: 0;
+}
+
+.custom-card ion-card-content {
+  flex-grow: 1;
+  overflow: hidden; /* Prevents content from overflowing */
+  text-overflow: ellipsis; /* Truncates content if it overflows */  -webkit-box-orient: vertical;
+}
+
+ion-content {
+  --background: linear-gradient(135deg, #87CEEB, #FFB6C1) !important; /* Light Sky Blue and Baby Pink gradient */
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  color: #ffffff; /* Default text color, adjust as needed */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: transparent; /* No additional background for hero section */
+  color: #0000FF;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: #0000FF;
+}
+
+.hero p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.theme-icon {
+  width: 30px;
+  height: 30px;
+}

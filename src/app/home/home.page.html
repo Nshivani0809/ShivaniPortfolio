@@ -1,0 +1,150 @@
+<ion-content [ngClass]="{ 'dark-theme': isDarkMode, 'light-theme': !isDarkMode }">
+  <!-- Theme Toggle Button (Dark/Light Mode Switcher) -->
+  <div class="theme-toggle">
+    <!-- Image Toggle for Dark/Light Mode -->
+    <img *ngIf="isDarkMode" src="../../assets/image/turn-off.png" alt="Dark Mode" (click)="toggleTheme()"class="theme-icon">
+    <img *ngIf="!isDarkMode" src="../../assets/image/dark.png " alt="Light Mode" (click)="toggleTheme()"class="theme-icon">
+
+    <!-- Ion Toggle for accessibility -->
+  </div>
+
+ <!-- Hero Section -->
+<section class="hero" style="background-color: #ffffff; color: #0000FF;">
+  <div class="content">
+    <!-- Profile Image -->
+    <div class="profile-image">
+      <img src="../../assets/image/image3.jpeg" alt="Shivani's Profile" />
+    </div>
+    <h1 style="color: #0000FF;">Hello, I'm <span style="color: #00008B;">Shivani</span></h1>
+    <p style="color: #000000; font-size: 18px; font-weight: bold;">A Passionate 
+      <span style="color: #00008B; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+        Full-Stack Developer
+      </span>
+    </p>    <ion-button fill="solid" routerLink="/about" style="--background: #0000FF; --color: white;">Know More About Me</ion-button>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="3">
+          <ion-card>
+            <ion-icon name="code-outline" size="large"></ion-icon>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, Angular, React</p>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card>
+            <ion-icon name="server-outline" size="large"></ion-icon>
+            <h3>Backend</h3>
+            <p> Java, Spring Boot, REST APIs</p>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card>
+            <ion-icon name="server-outline" size="large"></ion-icon>
+            <h3>Databases</h3>
+            <p>MySQL, PostgreSQL</p>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <ion-card>
+            <ion-icon name="construct-outline" size="large"></ion-icon>
+            <h3>Tools</h3>
+            <p>Git, AWS, Jenkins</p>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- Achievements and Certifications Section -->
+  <section class="achievements">
+    <h2>Achievements and Certifications</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Achievements</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ul>
+                <li>Top Performer in XYZ Hackathon</li>
+                <li>Developed a featured open-source library</li>
+                <li>Built a scalable e-commerce platform</li>
+              </ul>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Certifications</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ul>
+                <li>AWS Certified Developer - Associate</li>
+                <li>Oracle Java SE 11 Developer</li>
+              </ul>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- Tabs Info Section -->
+  <section class="tabs-info">
+    <h2>Explore More</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card class="custom-card">
+            <ion-card-header>
+              <ion-card-title>About Me</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Hi! I'm Shivani, a full-stack developer with a passion for building dynamic and responsive web applications.
+              With experience in various technologies, I enjoy solving complex problems and turning ideas into reality.
+            </ion-card-content>
+            <ion-card-footer>
+              <ion-button expand="block" fill="outline" routerLink="/about">More Info</ion-button>
+            </ion-card-footer>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card class="custom-card">
+            <ion-card-header>
+              <ion-card-title>Projects</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Discover my projects, including e-commerce platforms, API integrations, and real-time applications, all showcasing my expertise in full-stack development.
+            </ion-card-content>
+            <ion-card-footer>
+              <ion-button expand="block" fill="outline" routerLink="/projects">More Info</ion-button>
+            </ion-card-footer>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card class="custom-card">
+            <ion-card-header>
+              <ion-card-title>Contact</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Let’s connect! Whether you have a project in mind or just want to chat about technology, feel free to reach out to me anytime.
+            </ion-card-content>
+            <ion-card-footer>
+              <ion-button expand="block" fill="outline" routerLink="/contact">More Info</ion-button>
+            </ion-card-footer>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </section>
+</ion-content>
